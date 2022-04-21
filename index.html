@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale = 1.0">
+    <title>SuitCases</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  </head>
+  <body>
+      <section class="header"> 
+            <nav>
+                <a href="index.html"><img src="images/logo_transparent.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#about-da">About</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#production-da">Production</a></li>
+                        <li><a href="#contact-da">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>STRUF</h1>
+                <h3>Travel Safely with our new vision of SuitCases. </h3>
+                <a href="#contact-da" class="hero-btn">Contact Us</a>
+            </div>
+      </section>
+      <section class="about" id="about-da">
+          <h1>About</h1>
+          <p>We are a team from Cluj-Napoca, Romania. What we want to do is to make traveling easier and safer. We all know that in any trip, one of the main worries is the stress of luggage, not to lose it or not to have it stolen. We want to stop this problem, because traveling is fun and relaxing, not stressful. </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826372.590591364!2d24.332452767944865!3d46.2277696987165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e0!3m2!1sro!2sro!4v1650523218080!5m2!1sro!2sro" width="600" height="250" style="border-radius: 25px; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+      <section class="benefits" id="benefits">
+          <h1>Benefits</h1>
+          <p>Our product means more than a cary item. It makes us feel safer in our trips, because it has a new technology, but it also gives us a nice experience because of the high-quality items we used in its build.</p>
+            <div class="row">
+                <div class="benefits-col">
+                    <h3>Easy To Use</h3>
+                    <p>Our SuitCases are very easy to use and to transport because they have a new wheel technology. Now, potholes and sloping streets are no more a problem. You can travel everywhere with our SuitCases and never get tired because of its worry.</p>
+                </div>
+                <div class="benefits-col">
+                    <h3>Safety</h3>
+                    <p>Our SuitCases come with a profesional GPS tracking system which allows us to see in real time their location. The location of the GPS tracker is changed on every new suitcase, so it can't be found in the same place if someone wants to destroy it. Also the fingerprint scanner is very helpful because no one but the owner can open the SuitCase</p>
+                </div>
+                <div class="benefits-col">
+                    <h3>Quality</h3>
+                    <p>We use high high-quality materials. Our leather and all of our materials are from Cluj-Napoca and they give you a very premium feeling when touching the SuitCase. We really focus on the experience of the owner and we want the best quality items for him.</p>
+                </div>
+            </div>
+            <div class="track">
+                <!-- POZA CU TRACKING CA UN FEL DE HARTA PT GPS -->
+                <img src="images/poza.png">
+            </div>
+      </section>
+      <section class="production" id="production-da">
+        <h1>Production</h1>
+        <p>Our products are manufactured in our local factories, where the best people in the field work. Every detail is checked and any imperfections are repaired before being sent to the store or to the customer's home. We have 2 production halls, one for the production of parts and one for assembly. The design is made by the best specialists in the field in Cluj-Napoca and we aim to obtain the most efficient shape to facilitate the client's work when he has to pull the suitcase after him.</p>
+        <img src="images/hall.jpg">
+      </section>
+      <section class="contact" id="contact-da">
+        <div class="contact-right">
+          <h1>Get in Touch</h1>
+          <table>
+            <tr>
+              <td><i class="fa fa-warehouse"></i></td>
+              <td>Email</td>
+              <td>workdanciu@gmail.com</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-phone"></i></td>
+              <td>Phone</td>
+              <td>0770303281</td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-location-arrow"></i></td>
+              <td>Adress</td>
+              <td>Cluj-Napoca, Romania</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class=" fa fa-heart "></i> by STRUF team</p>
+        <p class="footer__copy">
+          &#169; STRUF. All rights reserved
+      </p>
+      </section>
+      <!-- JS for Toggle Menu on mobile -->
+      <script>
+          var navLinks = document.getElementById("navLinks");
+          function showMenu(){
+            navLinks.style.right = "0";
+          }
+          function hideMenu(){
+            navLinks.style.right = "-200px";
+          }
+      </script>
+  </body>
+</html>
